@@ -1,25 +1,27 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Fundamental jQuery Course</title> 
-    </head>
 
-    <body>
-    	<nav>
-        	<a href="#">Brazil</a>
-            <a href="#">Argentina</a>
-            <a href="#">Uruguai</a>
-            <a href="#">Chile</a>
-        </nav>
-        
-		<!-- scripts -->
-        <script src="jquery-3.4.1.min.js"></script>
-        <script>    
-        	$( function() {
-				
-			})
-        </script>   
-                
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamental jQuery Course</title>
+</head>
+
+<body>
+    <nav>
+        <a href="#">Brazil</a>
+        <a href="#">Argentina</a>
+        <a href="#">Uruguai</a>
+        <a href="#">Chile</a>
+    </nav>
+    <a href="#">Colombia</a>
+    <!-- scripts -->
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            $("nav a:nth(2)").css("color","red").css("display","block");
+        });
+    </script>
+
+</body>
+
 </html>
