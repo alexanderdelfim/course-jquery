@@ -1,30 +1,47 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Fundamental jQuery Course</title>
-        
-        <style>
-			body { font-family:Arial, Helvetica, sans-serif; font-size:0.9em; }
-			li { padding:5px;margin-bottom:1px }
-			.red { color:#F00 }
-			.green { color:#096 }
-		</style>
 
-		<script src="jquery-3.4.1.min.js"></script>
-        <script>
-			$( function(e) {
-				
-            });
-		</script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamental jQuery Course</title>
 
-    <body>
-    	<ul>
-            <li class="red">Essential HTML5 Course</li>
-            <li class="green">Essential CSS3 Course</li>
-            <li id="texto1">Essential JavaScript Course</li>
-            <li id="texto2">Fundamental jQuery Course</li>             
-    	</ul>
-    </body>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+        }
+
+        li {
+            padding: 5px;
+            margin-bottom: 1px
+        }
+
+        .red {
+            color: #F00
+        }
+
+        .green {
+            color: #096
+        }
+    </style>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(function (e) {
+            $("li").css("background-color","#ff9")
+          //$("li[class]").css("background-color","#ff9")
+          //$("li[id]").css("background-color","#ff9")
+          //$("li[id][title]").css("background-color","#ff9")
+        });
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li class="red">Essential HTML5 Course</li>
+        <li class="green">Essential CSS3 Course</li>
+        <li id="text1">Essential JavaScript Course</li>
+        <li id="text2" title="this course">Fundamental jQuery Course</li>
+    </ul>
+</body>
 </html>
