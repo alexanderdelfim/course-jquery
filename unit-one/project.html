@@ -1,32 +1,52 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Fundamental jQuery Course</title>
-        
-        <style>
-			body 	{ font-family:Arial, Helvetica, sans-serif; font-size:0.8em; }
-			ul 		{ margin:0; padding:0; list-style:none; width:200px }
-			li		{ margin-bottom:5px }
-			li a	{ padding:10px 6px; color:#39C; text-decoration:none } 
-        </style>
 
-		<script src="jquery-3.4.1.min.js"></script>
-        <script>
-			$( function(e) {
-	
-            });
-		</script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamental jQuery Course</title>
 
-    <body>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+        }
 
-		<ul>
-        	<li><a href="file.zip">Compressed file</a></li>
-            <li><a href="file.zip">Zipped file</a></li>
-            <li><a href="file.pdf">Text Document</a></li>
-            <li><a href="file.pdf">Curriculum Vitae</a></li>
-			<li><a href="file.zip">Download file</a></li>            
-        </ul>
-    </body>
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 200px
+        }
+
+        li {
+            margin-bottom: 5px
+        }
+
+        li a {
+            padding: 10px 6px;
+            color: #39C;
+            text-decoration: none
+        }
+    </style>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(function (e) {
+            $("li a[href$='.pdf']").before("<img src='images/icon_pdf.gif'>");
+            $("li a[href$='.zip']").before("<img src='images/icon_zip.gif'>");
+        });
+    </script>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="file.zip">Compressed file</a></li>
+        <li><a href="file.zip">Zipped file</a></li>
+        <li><a href="file.pdf">Text Document</a></li>
+        <li><a href="file.pdf">Curriculum Vitae</a></li>
+        <li><a href="file.zip">Download file</a></li>
+    </ul>
+</body>
+
 </html>
