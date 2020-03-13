@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso jQuery Fundamental</title>
+
+    <style>
+        #janela {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: #069;
+            margin-top: 20px;
+        }
+
+        #janela2 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(13, 153, 0);
+            margin-top: 340px;
+        }
+    </style>
+
+    <script src="jquery.3.2.1.min.js"></script>
+    <script>
+        function moverObjeto() {
+            $('#janela').animate({left:300}, 1000, "swing")
+        }
+
+        function moverObjeto2() {
+            $('#janela2').animate({left:300}, 1000, "linear")
+        }
+
+        $(function (e) {
+            $('#direita').click(moverObjeto);
+            $('#direita').click(moverObjeto2);
+        })
+    </script>
+</head>
+
+
+
+<body>
+    <input type="button" id="direita" value="Mover para Direita" />
+
+    <div id="janela"></div>
+    <div id="janela2"></div>
+</body>
+
+</html>
